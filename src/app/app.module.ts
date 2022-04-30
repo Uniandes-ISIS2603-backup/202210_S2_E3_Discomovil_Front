@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { ProveedorModule } from './proveedor/proveedor.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { GrupoMusicalModuleModule } from './grupo-musical-module/grupo-musical-module.module';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
       PageNotFoundComponent
    ],
@@ -17,7 +18,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserModule,
     AppRoutingModule,
     NavbarModule,
-    ProveedorModule
+    ProveedorModule,
+    GrupoMusicalModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
