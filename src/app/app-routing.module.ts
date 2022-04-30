@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MyNavbarComponent } from './navbar/MyNavbar/MyNavbar.component';
 import { ProveedorListComponent } from './proveedor/proveedor-list/proveedor-list.component';
 import { ProveedorMainComponent } from './proveedor-main/proveedor-main/proveedor-main.component';
 
@@ -12,7 +11,7 @@ const routes: Routes = [
   { 'path': '', component: HomePageComponent },
   { 'path': 'proveedores', component: ProveedorListComponent},
   { 'path': 'gruposMusicales/:id', component: GrupoMusicalMainComponent},
-  { 'path': 'gruposMusicales', component: MyNavbarComponent},
+  { 'path': 'gruposMusicales', component: HomePageComponent},
   { 'path': 'proveedores/:id', component: ProveedorMainComponent},
     //Este PAGE NOT FOUND debe ir al FINAL
   { 'path': '**', component: PageNotFoundComponent, pathMatch: 'full'},

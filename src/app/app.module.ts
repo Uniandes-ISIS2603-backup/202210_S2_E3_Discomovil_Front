@@ -25,7 +25,7 @@ import { GrupoMusicalModuleModule } from './grupo-musical-module/grupo-musical-m
     HttpClientModule,
     NavbarModule,
     ProveedorModule,
-    GrupoMusicalModuleModule
+    GrupoMusicalModuleModule,
     FooterModule,
     ProveedorModule,
     ProveedorMainModule
