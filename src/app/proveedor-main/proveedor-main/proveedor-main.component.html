@@ -1,8 +1,174 @@
-<app-MyNavbar></app-MyNavbar>
-<div *ngFor="let p of proveedores">
-  <h1>{{p.nombre}}</h1>
-  <h1>{{p.descripcion}}</h1>
-  <h1>{{p.trayectoria}}</h1>
-  <h1>{{p.calificacion}}</h1>
-  <img src={{p.imagen}} alt="">
+<div class="container-fluid">
+  <!-- Header -->
+  <div class="header-container">
+    <div class="brand flex items-center">
+      <img class="logo" src="{{ proveedor.imagen }}" alt="logo" />
+      <div class="flex flex-col justify-center items-start p-3">
+        <h1 class="nombre m-0">{{ proveedor.nombre }}</h1>
+        <p class="calificacion m-0">{{ proveedor.calificacion }}</p>
+      </div>
+    </div>
+    <div class="socials flex justify-around items-center">
+      <img src="../../../assets/images/socials/instagram.png" alt="instagram" />
+      <img src="../../../assets/images/socials/facebook.png" alt="facebook" />
+      <img src="../../../assets/images/socials/whatsapp.png" alt="whatsapp" />
+    </div>
+  </div>
+  <br />
+  <p class="descr">
+    {{ proveedor.descripcion }}
+    <span style="font-weight: 400">({{ proveedor.trayectoria }} en el mercado)</span>
+  </p>
+  <hr />
+  <!-- Carousel -->
+  <h1 class="sec-title">Eventos Anteriores</h1>
+  <div
+    id="carouselExampleCaptions"
+    class="carousel carousel-dark slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active bg-white"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        class="bg-white"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        class="bg-white"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="../../../assets/images/eventos/ev3.jpeg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="white">Evento en Bogotá D.C</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="../../../assets/images/eventos/ev1.jpeg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="white">Second slide label</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="../../../assets/images/eventos/ev2.jpeg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="white">Third slide label</h5>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Encuentranos -->
+  <h1 class="sec-title">Encuentranos</h1>
+
+  <div class="flex justify-center">
+    <div class="encuentranos-container flex flex-wrap justify-center items-center w-100">
+      <div class="map flex justify-center items-center">
+        <img src="../../../assets/images/zones/map.png" alt="map">
+      </div>
+      <div class="zones flex flex-col justify-center align-center">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <!-- <div *ngFor="z in proveedor.zonas"></div> -->
+      </div>
+    </div>
+  </div>
+  <!-- Cards -->
+  <h1 class="sec-title">Mas Información</h1>
+  <div class="row">
+    <div class="card-container col-xl-3 col-lg-6 col-md-6 col-sm-12">
+      <div class="card">
+        <img
+          src="../../../assets/images/servicios/box.png"
+          class="card-img-top"
+          alt="paquetes"
+        />
+        <h5 class="card-title">Paquetes</h5>
+        <p>Mira nuestros paquetes mas populares!</p>
+        <a href="#" class="btn btn-primary">Ver Paquetes</a>
+      </div>
+    </div>
+    <div class="card-container col-xl-3 col-lg-6 col-md-6 col-sm-12">
+      <div class="card">
+        <img
+          src="../../../assets/images/servicios/music.png"
+          class="card-img-top"
+          alt="grupos musicales"
+        />
+        <h5 class="card-title">Grupos Musicales</h5>
+        <p>Conoce nuestros grupos musicales y a sus artistas!</p>
+        <a href="#" class="btn btn-primary">Ver Grupos</a>
+      </div>
+    </div>
+    <div class="card-container col-xl-3 col-lg-6 col-md-6 col-sm-12">
+      <div class="card">
+        <img
+          src="../../../assets/images/servicios/calendar.png"
+          class="card-img-top"
+          alt="disponibilidad"
+        />
+        <h5 class="card-title">Disponibilidad</h5>
+        <p>Mira nuestra disponibilidad y horarios!</p>
+        <a href="#" class="btn btn-primary">Ver Disponibilidad</a>
+      </div>
+    </div>
+    <div class="card-container col-xl-3 col-lg-6 col-md-6 col-sm-12">
+      <div class="card">
+        <img
+          src="../../../assets/images/servicios/rating.png"
+          class="card-img-top"
+          alt="reviews"
+        />
+        <h5 class="card-title">Calificanos</h5>
+        <p>Calificanos y dinos que piensas de nosotros!</p>
+        <a href="#" class="btn btn-primary">Calificar Proveedor</a>
+      </div>
+    </div>
+  </div>
 </div>
