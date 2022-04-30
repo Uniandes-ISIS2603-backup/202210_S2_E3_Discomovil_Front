@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: "../assets/proveedores.json"
+  baseUrl:"../assets/proveedores.json"
 };
 
 /*
