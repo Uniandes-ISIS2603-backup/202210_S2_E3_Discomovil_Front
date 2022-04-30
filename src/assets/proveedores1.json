@@ -1,0 +1,52 @@
+{
+  "id": 1,
+  "nombre": "Snap Megafiestas",
+  "descripcion": "Somos líderes en la producción de los mejores eventos de colegios, empresas, fiestas de 15 años, entre otros, han hecho parte de nuestro crecimiento permanente, consolidándonos como los mejores.",
+  "trayectoria": "30 años de Experiencia",
+  "calificacion": "⭐⭐⭐⭐⭐",
+  "imagen": "https://bit.ly/3FcDL3j",
+  "redesSociales": [
+    {
+      "id": 1,
+      "nombre": "Instagram",
+      "usuario": "SnapMega",
+      "url": "https://instagram.com",
+      "proveedor": {
+        "id": 1,
+        "nombre": "Snap Megafiestas",
+        "descripcion": "Somos líderes en la producción de los mejores eventos de colegios, empresas, fiestas de 15 años, entre otros, han hecho parte de nuestro crecimiento permanente, consolidándonos como los mejores.",
+        "trayectoria": "30 años de Experiencia",
+        "calificacion": "⭐⭐⭐⭐⭐",
+        "imagen": "https://bit.ly/3FcDL3j"
+      }
+    },
+    {
+      "id": 2,
+      "nombre": "Facebook",
+      "usuario": "SnapMega",
+      "url": "https://facebook.com",
+      "proveedor": {
+        "id": 1,
+        "nombre": "Snap Megafiestas",
+        "descripcion": "Somos líderes en la producción de los mejores eventos de colegios, empresas, fiestas de 15 años, entre otros, han hecho parte de nuestro crecimiento permanente, consolidándonos como los mejores.",
+        "trayectoria": "30 años de Experiencia",
+        "calificacion": "⭐⭐⭐⭐⭐",
+        "imagen": "https://bit.ly/3FcDL3j"
+      }
+    },
+    {
+      "id": 3,
+      "nombre": "WhatsApp",
+      "usuario": "SnapMega",
+      "url": "https://whatsapp.com",
+      "proveedor": {
+        "id": 1,
+        "nombre": "Snap Megafiestas",
+        "descripcion": "Somos líderes en la producción de los mejores eventos de colegios, empresas, fiestas de 15 años, entre otros, han hecho parte de nuestro crecimiento permanente, consolidándonos como los mejores.",
+        "trayectoria": "30 años de Experiencia",
+        "calificacion": "⭐⭐⭐⭐⭐",
+        "imagen": "https://bit.ly/3FcDL3j"
+      }
+    }
+  ]
+}
