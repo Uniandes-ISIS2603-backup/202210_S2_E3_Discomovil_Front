@@ -6,13 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { NavbarModule } from './navbar/navbar.module';
+import { FooterModule } from './footer/footer.module';
 import { ProveedorModule } from './proveedor/proveedor.module';
 import { ProveedorMainModule } from './proveedor-main/proveedor-main.module';
+import { HomePageComponent } from './home-page/home-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomePageComponent,
       PageNotFoundComponent
    ],
   imports: [
@@ -20,6 +23,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppRoutingModule,
     HttpClientModule,
     NavbarModule,
+    FooterModule,
     ProveedorModule,
     ProveedorMainModule
   ],
