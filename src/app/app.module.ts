@@ -11,6 +11,7 @@ import { ProveedorModule } from './proveedor/proveedor.module';
 import { ProveedorMainModule } from './proveedor-main/proveedor-main.module';
 import { HomePageComponent } from './home-page/home-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { GrupoMusicalModuleModule } from './grupo-musical-module/grupo-musical-module.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     AppRoutingModule,
     HttpClientModule,
     NavbarModule,
+    ProveedorModule,
+    GrupoMusicalModuleModule
     FooterModule,
     ProveedorModule,
     ProveedorMainModule
