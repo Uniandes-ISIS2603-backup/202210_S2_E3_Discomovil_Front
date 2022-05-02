@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   baseUrl:"../assets/proveedores.json",
-  paqueteUrl:"../assetspaquetes.json"
+  paqueteUrl:"../assets/paquetes.json",
+  comentarioUrl: "./assets/comentarios.json"
 };
 
 /*

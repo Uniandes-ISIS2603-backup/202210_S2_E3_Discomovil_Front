@@ -2,21 +2,21 @@ import { Proveedor } from "../proveedor/proveedor";
 
 export class Paquete {
   proveedor: Proveedor;
- // cliente: Cliente;
-  contenido: string;
-  fecha: string;
-  valoracion: number;
+  nombre: string;
+  descripcion: string;
+  metadata: string;
+  costo: number;
   constructor(
     proveedor: Proveedor,
-    cliente: Cliente,
-    contenido: string,
-    fecha: string,
-    valoracion: number
+    nombre: string,
+    descripcion: string,
+    metadata: string,
+    costo: number
   ) {
     this.proveedor = proveedor;
-    this.cliente = cliente;
-    this.contenido = contenido;
-    this.fecha = fecha;
-    this.valoracion = valoracion;
+    this.nombre = nombre;
+    this.descripcion = descripcion;
+    this.metadata = metadata;
+    this.costo = costo;
   }
 }

@@ -13,6 +13,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { GrupoMusicalModuleModule } from './grupo-musical-module/grupo-musical-module.module';
 import { PaqueteModule } from './paquete/paquete.module';
+import { ComentarioModule } from './comentario/comentario.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PaqueteModule } from './paquete/paquete.module';
     FooterModule,
     ProveedorModule,
     ProveedorMainModule,
-    PaqueteModule
+    PaqueteModule,
+    ComentarioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
