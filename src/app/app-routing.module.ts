@@ -11,8 +11,8 @@ import { GrupoMusicalMainComponent } from './grupo-musical-module/grupo-musical-
 const routes: Routes = [
   { 'path': '', component: HomePageComponent },
   { 'path': 'proveedores', component: ProveedorListComponent},
+  { 'path': 'gruposMusicales', component: GrupoMusicalMainComponent},
   { 'path': 'gruposMusicales/:id', component: GrupoMusicalMainComponent},
-  { 'path': 'gruposMusicales', component: HomePageComponent},
   { 'path': 'proveedores/:id', component: ProveedorMainComponent},
   { 'path': 'proveedores/filtros/genero/:genero', component: ProveedorFiltroGeneroComponent},
     //Este PAGE NOT FOUND debe ir al FINAL
