@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Proveedor } from '../proveedor';
+import { ProveedorDetail } from '../proveedor-detail';
 import { ProveedorService } from '../proveedor.service';
 
 @Component({
@@ -9,6 +10,8 @@ import { ProveedorService } from '../proveedor.service';
 })
 export class ProveedorListComponent implements OnInit {
    proveedores: Array<Proveedor> = [];
+   selected: Boolean = false;
+   selectedProveedor!: ProveedorDetail;
 
   constructor(public proveedorService: ProveedorService) { }
   getProveedores() {
@@ -16,6 +19,10 @@ export class ProveedorListComponent implements OnInit {
       this.proveedores = proveedores;
 
     });
+  }
+  onSelected(proveedor: ProveedorDetail): void {
+    this.selected = true;
+    this.selectedProveedor = proveedor;
   }
 
   ngOnInit() {
