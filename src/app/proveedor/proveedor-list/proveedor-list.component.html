@@ -1,2 +1,24 @@
 <app-MyNavbar></app-MyNavbar>
-<h1>{{proveedores[0].nombre}}</h1>
+<div *ngIf="selected">
+ <app-proveedor-detail [proveedorDetail]="selectedProveedor"></app-proveedor-detail>
+</div>
+
+<hr />
+<div class="container-fluid">
+  <div class="row">
+    <div  *ngFor="let p of proveedores"class="cards-container col-lg-3 col-md-6 col-sm-12 mb-5">
+      <div class="card p-2" style="width: 17rem; height: 14rem">
+        <img
+          class="card-img-top"
+          src="{{ p.imagen }}"
+          alt="{{ p.nombre }}"
+          (click)="onSelected(p)"
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">{{ p.nombre }}</h5>
+      </div>
+    </div>
+  </div>
+</div>
+

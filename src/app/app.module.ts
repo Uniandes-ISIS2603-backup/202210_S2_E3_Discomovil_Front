@@ -22,6 +22,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     NavbarModule,
     ProveedorModule,
     ProveedorMainModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
