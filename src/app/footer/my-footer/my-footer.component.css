@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #52D1DC;
+  height: 75px;
+  margin-top: 25px;
+}
+
+.footer p {
+  font: 300 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}

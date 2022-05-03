@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RedSocialComponent } from './red-social.component';
+import { RedSocialListComponent } from './red-social-list/red-social-list.component';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [RedSocialComponent]
+  imports: [CommonModule],
+  declarations: [RedSocialListComponent],
 })
-export class RedSocialModule { }
+export class RedSocialModule {}
