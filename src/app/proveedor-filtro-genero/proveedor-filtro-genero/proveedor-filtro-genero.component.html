@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="header flex">
+    <img
+      class="generos"
+      src="../../../assets/images/generos/generos.jpeg"
+      alt="generos"
+    />
+    <div class="title flex flex-col justify-center w-100">
+      <h1>Proveedores que ofrecen el genero:</h1>
+      <h1>{{ genero }}</h1>
+      <hr />
+    </div>
+  </div>
+  <h2 class="resultados">Mostrando {{ proveedores.length }} resultados:</h2>
+  <div class="cards-container flex flex-wrap">
+    <div *ngFor="let p of proveedores">
+      <div class="card-container">
+        <div class="card">
+          <div class="img-container flex justify-center">
+            <img
+              src="{{ p.imagen }}"
+              class="card-img-top"
+              alt="{{ p.nombre }}"
+            />
+          </div>
+          <div class="card-body">
+            <h5 class="nombre">{{ p.nombre }}</h5>
+            <p class="calificacion">
+              {{ p.calificacion }}
+            </p>
+            <a href="/gruposMusicales/{{p.id}}" class="btn btn-primary w-100">Ver Grupos Musicales</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
