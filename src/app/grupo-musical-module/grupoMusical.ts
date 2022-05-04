@@ -24,4 +24,11 @@ export class GrupoMusical {
     this.musicos = musicos;
   }
 
+  //Getters
+
+  getId(): number {
+    return this.id;
+  }
+
+
 }

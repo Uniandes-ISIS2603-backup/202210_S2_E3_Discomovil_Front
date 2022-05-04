@@ -6,15 +6,17 @@ import { ProveedorMainComponent } from './proveedor-main/proveedor-main/proveedo
 import { HomePageComponent } from './home-page/home-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { GrupoMusicalMainComponent } from './grupo-musical-module/grupo-musical-main/grupo-musical-main.component';
+import { GrupoInfoCardComponent } from './grupo-musical-module/grupo-musical-main/grupo-info-card/grupo-info-card.component';
 
 const routes: Routes = [
-  { 'path': '', component: HomePageComponent },
-  { 'path': 'proveedores', component: ProveedorListComponent},
-  { 'path': 'gruposMusicales/:id', component: GrupoMusicalMainComponent},
-  { 'path': 'gruposMusicales', component: HomePageComponent},
-  { 'path': 'proveedores/:id', component: ProveedorMainComponent},
+  { path: ':id', component: GrupoInfoCardComponent, outlet: 'card-grupo'},
+  { path: 'gruposMusicales/:id', component: GrupoMusicalMainComponent},
+  { path: 'gruposMusicales', component: HomePageComponent},
+  { path: 'proveedores/:id', component: ProveedorMainComponent},
+  { path: 'proveedores', component: ProveedorListComponent},
     //Este PAGE NOT FOUND debe ir al FINAL
-  { 'path': '**', component: PageNotFoundComponent, pathMatch: 'full'},
+  { path: '', component: HomePageComponent },
+  { path: '**', component: PageNotFoundComponent, pathMatch: 'full'},
 ];
 
 @NgModule({

@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ProveedorMainService } from 'src/app/proveedor-main/proveedor-main.service';
+import { Proveedor } from 'src/app/proveedor/proveedor';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-grupo-musical-main',
@@ -7,9 +11,43 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GrupoMusicalMainComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private proveedorService: ProveedorMainService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {}
+
+  proveedor !: Proveedor;
+
+  @Input()
+  proveedor_id!: number;
+
+  loader: any;
+
+  getRoute() {
+    return this.router.url;
+  }
+
+  getProveedor(): void {
+    this.proveedorService.getProveedor(this.proveedor_id.toString()).subscribe(proveedor => this.proveedor = proveedor);
+  }
+
+  onLoad(params: any) {
+    this.proveedor_id = parseInt(params.get('id'));
+    this.getProveedor();
+  }
 
   ngOnInit() {
+    this.loader =
+      this.route.paramMap.subscribe(params => this.onLoad(params));
   }
+
+
+
+
+
+
+
+
 
 }
