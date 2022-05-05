@@ -15,7 +15,7 @@ export class GrupoMusicalService {
 
   getGrupo(id:number): Observable<GrupoMusical>
     {
-      return this.http.get<GrupoMusical>(this.apiUrl + id.toString());
+      return this.http.get<GrupoMusical>(this.apiUrl + id.toString() + '.json');
     }
 
 }

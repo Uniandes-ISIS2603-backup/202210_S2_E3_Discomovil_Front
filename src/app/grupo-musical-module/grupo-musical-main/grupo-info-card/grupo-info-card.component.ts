@@ -29,7 +29,7 @@ export class GrupoInfoCardComponent implements OnInit {
   }
 
   getGrupo(): void {
-    this.grupoService.getGrupo(this.grupoMusical_id).subscribe(grupo => this.grupoMusical = grupo);
+    this.grupoService.getGrupo(this.grupoMusical_id).subscribe(grupo => {this.grupoMusical = grupo; console.log(this.grupoMusical)});
   }
 
   onLoad(params:any) {
