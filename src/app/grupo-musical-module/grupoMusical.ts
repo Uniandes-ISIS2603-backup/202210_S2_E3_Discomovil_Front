@@ -12,8 +12,9 @@ export class GrupoMusical {
   generos: Genero[];
   canciones: Cancion[];
   musicos: Musico[];
+  imagen: string;
 
-  constructor (id: number, nombre: string, precio: number, descripcion: string, proveedor: Proveedor, generos: Genero[], canciones: Cancion[], musicos: Musico[]) {
+  constructor (id: number, nombre: string, precio: number, descripcion: string, proveedor: Proveedor, generos: Genero[], canciones: Cancion[], musicos: Musico[], imagen: string) {
     this.id = id;
     this.nombre = nombre;
     this.precio = precio;
@@ -22,6 +23,7 @@ export class GrupoMusical {
     this.generos = generos;
     this.canciones = canciones;
     this.musicos = musicos;
+    this.imagen = imagen;
   }
 
   //Getters
