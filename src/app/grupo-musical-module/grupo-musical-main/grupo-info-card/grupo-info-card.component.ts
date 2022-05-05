@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { GrupoMusical } from '../../grupoMusical';
+import { GrupoMusicalService } from '../../GrupoMusical.service';
 
 @Component({
   selector: 'grupo-info-card',
@@ -7,9 +10,41 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GrupoInfoCardComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private grupoService: GrupoMusicalService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) { }
 
-  ngOnInit() {
+
+  grupoMusical!: GrupoMusical;
+
+  @Input()
+  grupoMusical_id!: number;
+
+  loader: any;
+
+  numeroCanciones(): number
+  {
+    return this.grupoMusical.canciones.length;
+  }
+
+  getRoute() {
+    return this.router.url;
+  }
+
+  getGrupo(): void {
+    this.grupoService.getGrupo(this.grupoMusical_id).subscribe(grupo => {this.grupoMusical = grupo; console.log(this.grupoMusical)});
+  }
+
+  onLoad(params:any) {
+    this.grupoMusical_id = parseInt(params.get('id'));
+    this.getGrupo();
+  }
+
+  ngOnInit(): void {
+      this.loader =
+        this.route.paramMap.subscribe(params => this.onLoad(params));
   }
 
 }

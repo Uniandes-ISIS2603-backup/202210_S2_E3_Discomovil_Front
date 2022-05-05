@@ -48,5 +48,19 @@
         "imagen": "https://bit.ly/3FcDL3j"
       }
     }
+  ],
+  "gruposMusicales": [
+    {
+        "id": 1,
+        "nombre": "Grupo Niche",
+        "precio": 50000.34,
+        "descripcion": "El Grupo Niche es una agrupación musical colombiana de salsa fundada en 1979 en Bogotá, por Jairo Varela y Alexis Lozano",
+        "proveedor": {
+            "id": 1,
+            "nombre": "Snap Megafiestas",
+            "descripcion": "Somos líderes en la producción de los mejores eventos de colegios, empresas, fiestas de 15 años, entre otros, han hecho parte de nuestro crecimiento permanente, consolidándonos como los mejores.",
+            "trayectoria": "30 años de Experiencia"
+        }
+    }
   ]
 }

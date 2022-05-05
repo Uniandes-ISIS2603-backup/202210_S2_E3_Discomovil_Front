@@ -10,7 +10,7 @@ describe('Service: ProveedorFiltroGenero', () => {
     });
   });
 
-  it('should ...', inject([ProveedorFiltroGeneroService], (service: ProveedorFiltroGeneroService) => {
-    expect(service).toBeTruthy();
-  }));
+  // it('should ...', inject([ProveedorFiltroGeneroService], (service: ProveedorFiltroGeneroService) => {
+  //   expect(service).toBeTruthy();
+  // }));
 });
