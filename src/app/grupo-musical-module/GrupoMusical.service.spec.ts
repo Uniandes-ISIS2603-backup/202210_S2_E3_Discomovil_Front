@@ -10,7 +10,7 @@ describe('Service: GrupoMusical', () => {
     });
   });
 
-  it('should ...', inject([GrupoMusicalService], (service: GrupoMusicalService) => {
-    expect(service).toBeTruthy();
-  }));
+  // it('should ...', inject([GrupoMusicalService], (service: GrupoMusicalService) => {
+  //   expect(service).toBeTruthy();
+  // }));
 });
