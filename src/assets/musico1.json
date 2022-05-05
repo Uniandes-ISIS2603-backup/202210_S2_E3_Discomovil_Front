@@ -1,0 +1,19 @@
+{
+  "id": 1,
+  "nombre": "Jairo Varela",
+  "trayectoria": "Jairo Varela Martínez fue fundador, músico, director, compositor, vocalista y arreglista del Grupo Niche. Nació el 9 de diciembre de 1949 en Quibdó. Su primer acercamiento con la música fue a los ocho años cuando hizo parte de la agrupación 'La timba'",
+  "videoPresentacion": "https://www.youtube.com",
+  "imgPersonales": "https://www.elespectador.com/resizer/avNMeFOukowz1T5bCAIhVRsoPhs=/657x0/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/YWBOKSR5FJCSBM74TFJSMAC5MI.jpg",
+  "grupo": {
+      "id": 1,
+      "nombre": "Grupo Niche",
+      "precio": 5000.0,
+      "descripcion": "descr",
+      "proveedor": {
+        "id": 1,
+        "nombre": "Snap Megafiestas",
+        "descripcion": "Somos líderes en la producción de los mejores eventos de colegios, empresas, fiestas de 15 años, entre otros, han hecho parte de nuestro crecimiento permanente, consolidándonos como los mejores.",
+        "trayectoria": "30 años de Experiencia"
+      }
+  }
+}

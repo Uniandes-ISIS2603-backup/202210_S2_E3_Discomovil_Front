@@ -24,7 +24,7 @@ export class GrupoMusicalMainComponent implements OnInit {
 
   loader: any;
 
-  getRoute() {
+  getRoute(): string {
     return this.router.url;
   }
 
@@ -32,7 +32,7 @@ export class GrupoMusicalMainComponent implements OnInit {
     this.proveedorService.getProveedor(this.proveedor_id.toString()).subscribe(proveedor => this.proveedor = proveedor);
   }
 
-  onLoad(params: any) {
+  onLoad(params: any) : void {
     this.proveedor_id = parseInt(params.get('id'));
     this.getProveedor();
   }
