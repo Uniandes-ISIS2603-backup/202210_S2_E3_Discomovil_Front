@@ -7,6 +7,7 @@ export const environment = {
   baseUrl:"../assets/proveedores",
   gruposUrl:"../assets/grupoMusical",
   musicosUrl: "../assets/musico"
+  baseURL: "http://localhost:8080/api/"
 };
 
 /*
