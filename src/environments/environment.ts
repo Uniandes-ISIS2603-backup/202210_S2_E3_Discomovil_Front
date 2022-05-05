@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   baseUrl:"../assets/proveedores.json",
-  gruposUrl:"../assets/grupoMusical"
+  gruposUrl:"../assets/grupoMusical",
+  baseURL: "http://localhost:8080/api/"
 };
 
 /*
