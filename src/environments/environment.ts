@@ -4,8 +4,9 @@
 
 export const environment = {
   production: false,
-  baseUrl:"../assets/proveedores.json",
-  gruposUrl:"../assets/grupoMusical"
+  baseUrl:"../assets/proveedores",
+  gruposUrl:"../assets/grupoMusical",
+  musicosUrl: "../assets/musico"
 };
 
 /*

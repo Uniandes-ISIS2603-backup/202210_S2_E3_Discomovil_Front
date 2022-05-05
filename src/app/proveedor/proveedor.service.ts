@@ -13,9 +13,9 @@ export class ProveedorService {
 
 constructor(private http: HttpClient) { }
 getProveedores(): Observable<Proveedor[]> {
-  return this.http.get<Proveedor[]>(this.apiUrl);
+  return this.http.get<Proveedor[]>(this.apiUrl + '.json');
 }
 getProveedor(id: string): Observable<ProveedorDetail> {
-  return this.http.get<ProveedorDetail>(this.apiUrl + '/' + id);
+  return this.http.get<ProveedorDetail>(this.apiUrl + id + '.json');
 }
 }

@@ -1,3 +1,39 @@
-<p>
-  musico works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col-4">
+          <img src="{{proveedor.imagen}}" alt="" class="img-fluid prov-img">
+        </div>
+        <div class="col">
+          <h1 class="nombre">{{proveedor.nombre}}</h1>
+          <h2>{{musico.grupo.nombre}}: {{musico.nombre}}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+</div>
+<div class="container-fluid top" >
+  <div class="row">
+    <div class="col justify-content-center">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{musico.imgPersonales}}" alt="Card image cap">
+        <div class="card-body">
+          <p>{{musico.nombre}}</p>
+          <b>Trayectoria</b>
+          <p class="card-text">{{musico.trayectoria}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="embed-responsive ve-16by9">
+        <h1>
+          Video Presentación:
+        </h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/f4RkF7Zkbx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
