@@ -1,7 +1,16 @@
 <testExecutions version="1">
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'museums-front'" duration="118"/>
-    <testCase name="AppComponent should create the app" duration="14"/>
-    <testCase name="AppComponent should render title" duration="13"/>
+  <file path="src/app/proveedor/proveedor.service.spec.ts">
+    <testCase name="Service: Proveedor should ..." duration="25"/>
+  </file>
+  <file path="src/app/proveedor/proveedor-detail/proveedor-detail.component.spec.ts">
+    <testCase name="ProveedorDetailComponent should have an img element" duration="95"/>
+    <testCase name="ProveedorDetailComponent should create" duration="20"/>
+  </file>
+  <file path="src/app/proveedor/proveedor-list/proveedor-list.component.spec.ts">
+    <testCase name="ProveedorListComponent should have an img element " duration="61"/>
+    <testCase name="ProveedorListComponent should create" duration="15"/>
+  </file>
+  <file path="src/app/red-social/red-social-list/red-social-list.component.spec.ts">
+    <testCase name="RedSocialListComponent should create" duration="8"/>
   </file>
 </testExecutions>
