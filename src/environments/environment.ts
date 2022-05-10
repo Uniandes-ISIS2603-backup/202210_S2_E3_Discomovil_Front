@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  baseUrl:"../assets/proveedores.json"
+  baseUrl:"../assets/proveedores.json",
+  paqueteUrl:"../assets/paquetes.json",
+  comentarioUrl: "./assets/comentarios.json"
 };
 
 /*
