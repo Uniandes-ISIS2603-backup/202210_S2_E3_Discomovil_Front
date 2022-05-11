@@ -113,16 +113,18 @@
 .carousel .carousel-inner img {
   object-fit: cover;
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 
 .encuentranos-container {
   background-color: rgb(245, 245, 245);
+  width: 400px;
   height: 500px;
+  padding: 15px;
 }
 
 .map img {
-  width: 300px;
+  width: 200px;
 }
 
 .zones {
