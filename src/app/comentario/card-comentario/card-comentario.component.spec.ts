@@ -43,6 +43,7 @@ describe('CardComentarioComponent', () => {
       faker.internet.url(),
       [],
       [],
+      [],
       []
     );
 
