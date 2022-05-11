@@ -27,15 +27,16 @@ describe('ProveedorDetailComponent', () => {
     component = fixture.componentInstance;
 
     component.proveedorDetail= new ProveedorDetail(
-        faker.datatype.number(),
-        faker.lorem.sentence(),
-        faker.lorem.sentence(),
-        faker.lorem.sentence(),
-        faker.image.imageUrl(),
-        faker.lorem.sentence(),
-        [],
-        [],
-        []
+      faker.datatype.number(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      [],
+      [],
+      [],
+      []
       );
 
     fixture.detectChanges();
