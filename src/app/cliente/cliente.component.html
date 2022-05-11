@@ -7,7 +7,7 @@
       <p class="card-text"><strong>Email: </strong>{{this.cliente.email}}</p>
       <p class="card-text"><strong>Fecha Nacimiento: </strong>{{this.cliente.fechaDeNacimiento}}</p>
       <div>
-        <a href="#" class="btn btn-primary">Ver comentarios</a>
+        <p class="btn btn-primary" (click)="dispComments()">Ver comentarios</p>
       </div>
       <br>
       <div>
@@ -17,4 +17,22 @@
     <div class="card-footer text-muted">
     </div>
   </div>
+</div>
+<br>
+<br>
+<div class="container">
+<div *ngIf="comentarios">
+  <div *ngFor="let comentario of this.cliente.comentarios">
+    <div class="card" style="width: 20rem;">
+      <div class="cardbody">
+        <h5 class="card-title">{{comentario.contenido.substring(0, comentario.contenido.length/2) + '...'}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted"><strong>Valoración: </strong>{{comentario.valoracion}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">{{comentario.fecha}}</h6>
+        <p class="card-text">{{comentario.contenido}}</p>
+        <h6><strong>Proveedor</strong></h6>
+        <a href="proveedores/{{comentario.proveedor.id}}" class="card-link">{{comentario.proveedor.nombre}}</a>
+      </div>
+    </div>
+  </div>
+</div>
 </div>

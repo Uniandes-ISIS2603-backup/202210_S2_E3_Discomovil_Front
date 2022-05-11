@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ClienteComponent } from './cliente.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    BrowserModule
   ],
-  declarations: [ClienteComponent]
+  declarations: [ClienteComponent],
+  exports:[ClienteComponent]
 })
 export class ClienteModule { }

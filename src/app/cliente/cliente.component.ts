@@ -19,6 +19,8 @@ export class ClienteComponent implements OnInit {
 
   cliente !: Cliente;
 
+  comentarios!: boolean;
+
   @Input()
   cliente_id!: number;
 
@@ -39,6 +41,15 @@ export class ClienteComponent implements OnInit {
 
   ngOnInit() {
     this.loader = this.route.paramMap.subscribe(params => this.onLoad(params));
+  }
+
+  dispComments() : void {
+    this.comentarios = true;
+    console.log(this.comentarios);
+  }
+
+  console() :void {
+   console.log("hola");
   }
 
 }
