@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div *ngIf="dispGroup">
+    <grupo-info-card [grupoMusical_id]="this.currentGroup.id"></grupo-info-card>
+   </div>
+   <hr />
+   <div class="container-fluid">
+     <div class="row">
+       <div  *ngFor="let g of this.gruposMusicales" class="cards-container col-lg-3 col-md-6 col-sm-12 mb-5">
+         <div class="card p-2" style="width: 17rem; height: 14rem">
+           <img
+             class="card-img-top"
+             src="{{ g.imagen}}"
+             alt="{{ g.nombre }}"
+             (click)="onSelected(g)"
+           />
+   <div class="card-body">
+             <h5 class="card-title">{{ g.nombre }}</h5>
+             <a href="/proveedores/{{g.proveedor.id}}">{{g.proveedor.nombre}}</a>
+     </div>
+   </div>
+</div>

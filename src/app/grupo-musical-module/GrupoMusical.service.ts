@@ -14,8 +14,13 @@ export class GrupoMusicalService {
   constructor(private http: HttpClient) { }
 
   getGrupo(id:number): Observable<GrupoMusical>
-    {
+  {
       return this.http.get<GrupoMusical>(this.apiUrl + id.toString() + '.json');
-    }
+  }
+
+  getGrupos(): Observable<GrupoMusical[]>
+  {
+    return this.http.get<GrupoMusical[]>(this.apiUrl + '.json');
+  }
 
 }

@@ -38,7 +38,9 @@ export class GrupoInfoCardComponent implements OnInit {
   }
 
   onLoad(params:any) {
+    if (this.grupoMusical_id === undefined) {
     this.grupoMusical_id = parseInt(params.get('id'));
+    }
     this.getGrupo();
   }
 
