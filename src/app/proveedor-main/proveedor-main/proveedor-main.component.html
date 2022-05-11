@@ -59,7 +59,7 @@
           alt="..."
         />
         <div class="carousel-caption d-none d-md-block">
-          <h5 class="white">Evento en Bogotá D.C</h5>
+          <h5 class="white">Graduacion en Bogotá D.C</h5>
         </div>
       </div>
       <div class="carousel-item">
@@ -69,7 +69,7 @@
           alt="..."
         />
         <div class="carousel-caption d-none d-md-block">
-          <h5 class="white">Second slide label</h5>
+          <h5 class="white">Matrimonio en Cartagena</h5>
         </div>
       </div>
       <div class="carousel-item">
@@ -79,7 +79,7 @@
           alt="..."
         />
         <div class="carousel-caption d-none d-md-block">
-          <h5 class="white">Third slide label</h5>
+          <h5 class="white">Fiesta de 15's en Bogotá D.C</h5>
         </div>
       </div>
     </div>
@@ -111,10 +111,11 @@
         <img src="../../../assets/images/zones/map.png" alt="map">
       </div>
       <div class="zones flex flex-col justify-center align-center">
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet.</p>
+          <p>Bogota D.C</p>
+          <p>Cartagena</p>
+          <p>Cali</p>
+          <p>Medellín</p>
+          <p>Barranquilla</p>
         <!-- <div *ngFor="z in proveedor.zonas"></div> -->
       </div>
     </div>
@@ -175,10 +176,47 @@
   <div *ngIf="dispCalificacion">
       <div class="row text-center">
     <div class="container">
-     <h1>Comentarios anteriores: </h1>
-     <div *ngFor="let comentario of this.proveedor.comentarios">
-       <app-card-comentario [comentario]="comentario"></app-card-comentario>
+     <h1 class="mt-5 sec-title">Comentarios anteriores</h1>
+     <div class="flex flex-wrap align-center">
+       <div *ngFor="let comentario of this.proveedor.comentarios">
+         <app-card-comentario [comentario]="comentario"></app-card-comentario>
+       </div>
      </div>
+     <div class="form-container">
+      <h1 class="form-title mb-5 sec-title">Agregar Comentario</h1>
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Comentario:</label>
+          <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <label for="exampleFormControlTextarea1">Calificacion:</label>
+        <div class="mb-3">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3">3</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3">4</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3">5</label>
+          </div>
+        </div>
+        <div class="form-group row">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
     </div>
   </div>
   </div>

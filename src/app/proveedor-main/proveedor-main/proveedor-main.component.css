@@ -166,3 +166,30 @@
   color: rgb(100, 100, 100);
   text-align: center;
 }
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea {
+  resize: none;
+  width: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(200,200,200);
+  width: 400px;
+  padding: 15px;
+}
+
+button {
+  width: 300px;
+}
