@@ -9,8 +9,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { GrupoMusicalMainComponent } from './grupo-musical-module/grupo-musical-main/grupo-musical-main.component';
 import { GrupoInfoCardComponent } from './grupo-musical-module/grupo-musical-main/grupo-info-card/grupo-info-card.component';
 import { MusicoComponent } from './musico/musico.component';
+import { ClienteComponent } from './cliente/cliente.component';
 
 const routes: Routes = [
+  {path: 'clientes/:id', component: ClienteComponent},
   { path: ':id', component: GrupoInfoCardComponent, outlet: 'card-grupo'},
   { path: 'gruposMusicales/:id', component: GrupoMusicalMainComponent},
   { path: 'gruposMusicales', component: HomePageComponent},
