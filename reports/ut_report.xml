@@ -1,16 +1,84 @@
 <testExecutions version="1">
   <file path="src/app/proveedor/proveedor.service.spec.ts">
-    <testCase name="Service: Proveedor should ..." duration="25"/>
-  </file>
-  <file path="src/app/proveedor/proveedor-detail/proveedor-detail.component.spec.ts">
-    <testCase name="ProveedorDetailComponent should have an img element" duration="95"/>
-    <testCase name="ProveedorDetailComponent should create" duration="20"/>
+    <testCase name="Service: Proveedor should ..." duration="17"/>
   </file>
   <file path="src/app/proveedor/proveedor-list/proveedor-list.component.spec.ts">
-    <testCase name="ProveedorListComponent should have an img element " duration="61"/>
-    <testCase name="ProveedorListComponent should create" duration="15"/>
+    <testCase name="ProveedorListComponent should have an img element " duration="63"/>
+    <testCase name="ProveedorListComponent should create" duration="12"/>
+  </file>
+  <file path="src/app/proveedor/proveedor-detail/proveedor-detail.component.spec.ts">
+    <testCase name="ProveedorDetailComponent should create" duration="29"/>
+    <testCase name="ProveedorDetailComponent should have an img element" duration="10"/>
+  </file>
+  <file path="src/app/proveedor-main/proveedor-main/proveedor-main.component.spec.ts">
+    <testCase name="ProveedorMainComponent should create" duration="55"/>
   </file>
   <file path="src/app/red-social/red-social-list/red-social-list.component.spec.ts">
-    <testCase name="RedSocialListComponent should create" duration="8"/>
+    <testCase name="RedSocialListComponent should create" duration="9"/>
+  </file>
+  <file path="src/app/comentario/card-comentario/card-comentario.component.spec.ts">
+    <testCase name="CardComentarioComponent should create" duration="19">
+      <failure message="Error">TypeError: Cannot read properties of undefined (reading 'contenido')
+    at CardComentarioComponent_Template (ng:///CardComentarioComponent.js:32:49)
+    at executeTemplate (node_modules/@angular/core/fesm2015/core.mjs:9620:1)
+    at refreshView (node_modules/@angular/core/fesm2015/core.mjs:9486:1)
+    at refreshComponent (node_modules/@angular/core/fesm2015/core.mjs:10680:1)
+    at refreshChildComponents (node_modules/@angular/core/fesm2015/core.mjs:9282:1)
+    at refreshView (node_modules/@angular/core/fesm2015/core.mjs:9536:1)
+    at renderComponentOrTemplate (node_modules/@angular/core/fesm2015/core.mjs:9600:1)
+    at tickRootContext (node_modules/@angular/core/fesm2015/core.mjs:10854:1)
+    at detectChangesInRootView (node_modules/@angular/core/fesm2015/core.mjs:10879:1)
+    at RootViewRef.detectChanges (node_modules/@angular/core/fesm2015/core.mjs:21491:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/proveedor-main/proveedor-main/proveedor-main.component.spec.ts">
+    <testCase name="ProveedorMainComponent should create" duration="29"/>
+  </file>
+  <file path="src/app/grupo-musical-module/grupoMusical-list/grupoMusical-list.component.spec.ts">
+    <testCase name="GrupoMusicalListComponent should create" duration="43">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[GrupoMusicalService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'GrupoMusicalService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[GrupoMusicalService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11145:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11312:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11312:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.GrupoMusicalService_Factory [as factory] (ng:///GrupoMusicalService/ɵfac.js:4:47)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11482:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11301:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21872:1)
+    at Object.get (node_modules/@angular/core/fesm2015/core.mjs:21549:1)
+
+Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/grupo-musical-module/grupoMusical-list/grupoMusical-list.component.spec.ts:26:23)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/cliente/cliente-service.service.spec.ts">
+    <testCase name="Service: ClienteService should ..." duration="5">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[ClienteServiceService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ClienteServiceService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[ClienteServiceService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11145:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11312:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11312:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.ClienteServiceService_Factory [as factory] (ng:///ClienteServiceService/ɵfac.js:4:49)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11482:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11301:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21872:1)
+    at TestBedRender3.inject (node_modules/@angular/core/fesm2015/testing.mjs:1719:1)
+</failure>
+    </testCase>
   </file>
 </testExecutions>
