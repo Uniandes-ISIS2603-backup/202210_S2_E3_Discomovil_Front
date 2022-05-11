@@ -21,6 +21,12 @@ export class ProveedorMainComponent implements OnInit {
   provId!: string;
   @Input() proveedor!: Proveedor;
 
+  dispCalificacion : boolean = false;
+
+  renderCalificacion() {
+    this.dispCalificacion = true;
+  }
+
   constructor(
     private route: ActivatedRoute,
     public proveeedorMainService: ProveedorMainService

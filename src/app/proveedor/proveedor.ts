@@ -1,3 +1,4 @@
+import { Comentario } from "../comentario/comentario";
 import { GrupoMusical } from "../grupo-musical-module/grupoMusical";
 import { RedSocial } from "../red-social/red-social";
 
@@ -10,7 +11,7 @@ export class Proveedor {
   imagen: string;
   redesSociales: RedSocial[];
   gruposMusicales: GrupoMusical[];
-  // comentarios: Comentario[],
+  comentarios: Comentario[];
   // equiposSonido: EquipoSonido[],
   // paquetes: Paquete[],
   // zonas: Zona[],
@@ -24,7 +25,8 @@ export class Proveedor {
     calificacion: string,
     imagen: string,
     redesSociales: RedSocial[],
-    gruposMusicales: GrupoMusical[]
+    gruposMusicales: GrupoMusical[],
+    comentarios: Comentario[]
   ) {
     this.id = id;
     this.nombre = nombre;
@@ -34,6 +36,7 @@ export class Proveedor {
     this.imagen = imagen;
     this.redesSociales = redesSociales;
     this.gruposMusicales = gruposMusicales;
+    this.comentarios = comentarios;
   }
 
   //Retorna los id de los grupos musicales

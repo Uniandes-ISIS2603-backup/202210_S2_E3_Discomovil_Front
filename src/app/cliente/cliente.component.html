@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="card text-center">
+    <div class="card-header">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{this.cliente.nombre}}</h5>
+      <p class="card-text"><strong>Email: </strong>{{this.cliente.email}}</p>
+      <p class="card-text"><strong>Fecha Nacimiento: </strong>{{this.cliente.fechaDeNacimiento}}</p>
+      <div>
+        <p class="btn btn-primary" (click)="dispComments()">Ver comentarios</p>
+      </div>
+      <br>
+      <div>
+        <a href="" class="btn btn-primary">Ver eventos</a>
+      </div>
+   </div>
+    <div class="card-footer text-muted">
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="container">
+<div *ngIf="comentarios">
+  <div *ngFor="let comentario of this.cliente.comentarios">
+    <app-card-comentario [comentario]="comentario"></app-card-comentario>
+  </div>
+</div>
+</div>
