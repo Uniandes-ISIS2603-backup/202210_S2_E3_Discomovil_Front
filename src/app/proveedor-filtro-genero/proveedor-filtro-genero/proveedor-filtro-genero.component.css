@@ -103,3 +103,12 @@ img.generos {
     justify-content: center !important;
   }
 }
+
+h1 {
+  font: 500 24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+form input {
+  width: 262px;
+}
