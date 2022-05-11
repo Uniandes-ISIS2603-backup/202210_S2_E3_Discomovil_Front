@@ -34,10 +34,12 @@ describe('ProveedorListComponent', () => {
         faker.lorem.sentence(),
         faker.lorem.sentence(),
         faker.lorem.sentence(),
-        faker.image.imageUrl(),
         faker.lorem.sentence(),
-       [],
-       [],
+        faker.lorem.sentence(),
+        [],
+        [],
+        [],
+        []
       ),
     ];
     fixture.detectChanges();
