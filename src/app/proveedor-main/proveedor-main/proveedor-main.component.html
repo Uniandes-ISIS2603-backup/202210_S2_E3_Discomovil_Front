@@ -167,8 +167,19 @@
         />
         <h5 class="card-title">Calificanos</h5>
         <p>Calificanos y dinos que piensas de nosotros!</p>
-        <a href="#" class="btn btn-primary">Calificar Proveedor</a>
+        <p class="btn btn-primary" (click)="renderCalificacion()" style="color: white;">Calificar Proveedor</p>
       </div>
     </div>
+  </div>
+  <!-- Calificacion -->
+  <div *ngIf="dispCalificacion">
+      <div class="row text-center">
+    <div class="container">
+     <h1>Comentarios anteriores: </h1>
+     <div *ngFor="let comentario of this.proveedor.comentarios">
+       <app-card-comentario [comentario]="comentario"></app-card-comentario>
+     </div>
+    </div>
+  </div>
   </div>
 </div>

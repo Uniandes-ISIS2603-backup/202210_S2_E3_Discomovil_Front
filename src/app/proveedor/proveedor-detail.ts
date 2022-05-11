@@ -1,6 +1,7 @@
 import { Proveedor } from './proveedor';
 import { RedSocial } from '../red-social/red-social';
 import { GrupoMusical } from '../grupo-musical-module/grupoMusical';
+import { Comentario } from '../comentario/comentario';
 
 
 export class ProveedorDetail extends Proveedor {
@@ -14,10 +15,11 @@ export class ProveedorDetail extends Proveedor {
     calificacion: string,
     imagen: string,
     redesSociales:RedSocial [],
-    gruposMusicales: GrupoMusical[]
+    gruposMusicales: GrupoMusical[],
+    comentarios: Comentario[]
 
   ) {
-    super(id, nombre, descripcion, trayectoria,calificacion, imagen,redesSociales, gruposMusicales);
+    super(id, nombre, descripcion, trayectoria,calificacion, imagen,redesSociales, gruposMusicales, comentarios);
 
   }
 }
