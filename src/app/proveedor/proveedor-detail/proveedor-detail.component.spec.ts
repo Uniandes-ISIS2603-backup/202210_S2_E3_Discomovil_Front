@@ -35,6 +35,7 @@ describe('ProveedorDetailComponent', () => {
         faker.lorem.sentence(),
         [],
         [],
+        []
       );
 
     fixture.detectChanges();
