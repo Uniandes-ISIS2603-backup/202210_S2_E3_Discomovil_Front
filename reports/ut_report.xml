@@ -1,7 +1,108 @@
 <testExecutions version="1">
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'museums-front'" duration="118"/>
-    <testCase name="AppComponent should create the app" duration="14"/>
-    <testCase name="AppComponent should render title" duration="13"/>
+  <file path="src/app/paquete/paquete.service.spec.ts">
+    <testCase name="Service: Paquete should ..." duration="8">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[PaqueteService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'PaqueteService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[PaqueteService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11145:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11312:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11312:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.PaqueteService_Factory [as factory] (ng:///PaqueteService/ɵfac.js:4:42)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11482:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11301:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21872:1)
+    at TestBedRender3.inject (node_modules/@angular/core/fesm2015/testing.mjs:1719:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/red-social/red-social-list/red-social-list.component.spec.ts">
+    <testCase name="RedSocialListComponent should create" duration="11"/>
+  </file>
+  <file path="src/app/paquete/paquete-list/paquete-list.component.spec.ts">
+    <testCase name="PaqueteListComponent should create" duration="100">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[PaqueteService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'PaqueteService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[PaqueteService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11145:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11312:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11312:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.PaqueteService_Factory [as factory] (ng:///PaqueteService/ɵfac.js:4:42)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11482:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11301:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21872:1)
+    at Object.get (node_modules/@angular/core/fesm2015/core.mjs:21549:1)
+
+Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/paquete/paquete-list/paquete-list.component.spec.ts:26:23)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/comentario/comnentario_list/comnentario_list.component.spec.ts">
+    <testCase name="Comnentario_listComponent should create" duration="7">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[ComentarioService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'ComentarioService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[ComentarioService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11145:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11312:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11312:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.ComentarioService_Factory [as factory] (ng:///ComentarioService/ɵfac.js:4:45)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11482:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11301:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21872:1)
+    at Object.get (node_modules/@angular/core/fesm2015/core.mjs:21549:1)
+
+Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/comentario/comnentario_list/comnentario_list.component.spec.ts:26:23)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+    </testCase>
+  </file>
+  <file path="src/app/comentario/comentario.service.spec.ts">
+    <testCase name="Service: Comentario should ..." duration="4"/>
+  </file>
+  <file path="src/app/comentario/card-comentario/card-comentario.component.spec.ts">
+    <testCase name="CardComentarioComponent should display the contenido" duration="9"/>
+    <testCase name="CardComentarioComponent should create" duration="3"/>
+  </file>
+  <file path="src/app/cliente/cliente-service.service.spec.ts">
+    <testCase name="Service: ClienteService should get client with id 1" duration="2"/>
+    <testCase name="Service: ClienteService should ..." duration="2"/>
+  </file>
+  <file path="src/app/proveedor/proveedor-list/proveedor-list.component.spec.ts">
+    <testCase name="ProveedorListComponent should create" duration="9"/>
+    <testCase name="ProveedorListComponent should have an img element " duration="6"/>
+  </file>
+  <file path="src/app/proveedor/proveedor-detail/proveedor-detail.component.spec.ts">
+    <testCase name="ProveedorDetailComponent should create" duration="7"/>
+    <testCase name="ProveedorDetailComponent should have an img element" duration="4"/>
+  </file>
+  <file path="src/app/proveedor/proveedor.service.spec.ts">
+    <testCase name="Service: Proveedor should ..." duration="1"/>
+  </file>
+  <file path="src/app/proveedor-main/proveedor-main/proveedor-main.component.spec.ts">
+    <testCase name="ProveedorMainComponent should create" duration="8"/>
+  </file>
+  <file path="src/app/grupo-musical-module/grupoMusical-list/grupoMusical-list.component.spec.ts">
+    <testCase name="GrupoMusicalListComponent should create" duration="6"/>
+  </file>
+  <file path="src/app/proveedor-main/proveedor-main/proveedor-main.component.spec.ts">
+    <testCase name="ProveedorMainComponent should create" duration="15"/>
   </file>
 </testExecutions>

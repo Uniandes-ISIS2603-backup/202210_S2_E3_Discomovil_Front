@@ -1,0 +1,67 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.banner img {
+  width: 125px;
+}
+
+.banner img:hover {
+  transform: translateY(-50px);
+  transition: transform 1s ease;
+  cursor: pointer;
+}
+
+.banner div {
+  margin-left: 25px;
+}
+
+.banner div > * {
+  color: rgb(75, 75, 75);
+}
+
+.banner div h1 {
+  font: 400 42px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.banner div p {
+  font: 300 20px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.carousel .carousel-inner {
+  width: 800px
+}
+
+.carousel-inner img {
+  object-fit: contain;
+}
+
+.quienes-somos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quienes-somos h1 {
+  color: rgb(75, 75, 75);
+  font: 400 42px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 50px;
+}
+
+.quienes-somos p {
+  color: rgb(75, 75, 75);
+  font: 300 20px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: justify;
+  max-width: 700px;
+}
+
