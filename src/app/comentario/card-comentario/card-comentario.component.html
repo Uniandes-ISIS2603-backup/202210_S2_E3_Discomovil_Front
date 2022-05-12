@@ -1,10 +1,10 @@
 <div class="card m-1" style="width: 20rem;">
   <div class="cardbody">
-    <h5 class="card-title">{{comentario.contenido.substring(0, comentario.contenido.length/2) + '...'}}</h5>
-    <h6 class="card-subtitle mb-2 text-muted"><strong>Valoración: </strong>{{comentario.valoracion}}</h6>
-    <h6 class="card-subtitle mb-2 text-muted">{{comentario.fecha}}</h6>
-    <p class="card-text">{{comentario.contenido}}</p>
-    <h6><strong>Proveedor</strong></h6>
-    <a href="proveedores/{{comentario.proveedor.id}}" class="card-link">{{comentario.proveedor.nombre}}</a>
+    <h5 class="card-title p-2">{{comentario.contenido.substring(0, comentario.contenido.length-3) + '...'}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted p-2"><strong>Valoración: </strong>{{comentario.valoracion}}</h6>
+    <h6 class="card-subtitle mb-2 text-muted p-2">{{comentario.fecha}}</h6>
+    <p class="card-text p-2">{{comentario.contenido}}</p>
+    <h6 class="p-2"><strong>Proveedor</strong></h6>
+    <a href="proveedores/{{comentario.proveedor.id}}" class="card-link p-2">{{comentario.proveedor.nombre}}</a>
   </div>
 </div>
