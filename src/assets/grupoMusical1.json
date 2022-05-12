@@ -2,7 +2,7 @@
   "id": 1,
   "nombre": "Grupo Niche",
   "precio": 5000.0,
-  "descripcion": "descr",
+  "descripcion": "El Grupo Niche es sin duda la agrupación de salsa colombiana con mayor reconocimiento a nivel nacional e internacional. Fue fundado en Bogotá en 1979 por el compositor chocoano Jairo Varela (1949-2012), quien durante toda su vida fue su director y el compositor de casi toda su obra. En 1982 la orquesta se trasladó a Cali, y en el entorno del movimiento salsero caleño la agrupación creció y se consolidó, generando una asociación entre la orquesta y la ciudad.",
   "proveedor": {
     "id": 1,
     "nombre": "Snap Megafiestas",
@@ -55,5 +55,6 @@
         }
       }
     }
-  ]
+  ],
+  "imagen": "https://rtvc-assets-radionica3.s3.amazonaws.com/s3fs-public/styles/articulo_760x422/public/field/image/article/grupo_niche1.jpg?itok=pyCLRZn5"
 }

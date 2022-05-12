@@ -10,6 +10,7 @@ import { FooterModule } from './footer/footer.module';
 import { ProveedorModule } from './proveedor/proveedor.module';
 import { ProveedorMainModule } from './proveedor-main/proveedor-main.module';
 import { ProveedorFiltroGeneroModule } from './proveedor-filtro-genero/proveedor-filtro-genero.module';
+import { ZonaModule } from './zona/zona.module';
 
 import { HomePageComponent } from './home-page/home-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -31,7 +32,8 @@ import { GrupoMusicalModuleModule } from './grupo-musical-module/grupo-musical-m
     FooterModule,
     ProveedorModule,
     ProveedorMainModule,
-    ProveedorFiltroGeneroModule
+    ProveedorFiltroGeneroModule,
+    ZonaModule
   ],
   providers: [],
   bootstrap: [AppComponent],

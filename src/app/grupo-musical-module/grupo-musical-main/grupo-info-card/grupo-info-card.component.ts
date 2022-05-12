@@ -24,6 +24,11 @@ export class GrupoInfoCardComponent implements OnInit {
 
   loader: any;
 
+  numeroCanciones(): number
+  {
+    return this.grupoMusical.canciones.length;
+  }
+
   getRoute() {
     return this.router.url;
   }
