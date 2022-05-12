@@ -18,7 +18,6 @@ import { GrupoMusicalModuleModule } from './grupo-musical-module/grupo-musical-m
 
 import { PaqueteModule } from './paquete/paquete.module';
 import { ComentarioModule } from './comentario/comentario.module';
-
 import { ClienteModule } from './cliente/cliente.module';
 
 
@@ -40,7 +39,7 @@ import { ClienteModule } from './cliente/cliente.module';
     ProveedorMainModule,
 
     PaqueteModule,
-    ComentarioModule
+    ComentarioModule,
 
     ProveedorFiltroGeneroModule,
     ZonaModule,

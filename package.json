@@ -9,9 +9,7 @@
     "test": "ng test",
     "coverage": "ng test --watch --code-coverage",
     "sonar": "sonar-scanner",
-    "e2e": "ng e2e",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -34,11 +32,9 @@
     "@angular-devkit/build-angular": "~13.3.0",
     "@angular/cli": "~13.3.0",
     "@angular/compiler-cli": "~13.3.0",
-    "@cypress/schematic": "^1.7.0",
     "@faker-js/faker": "^6.3.1",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
-    "cypress": "latest",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
@@ -50,5 +46,17 @@
     "karma-sonarqube-unit-reporter": "0.0.23",
     "sonar-scanner": "^3.1.0",
     "typescript": "~4.6.2"
-  }
+  },
+  "description": "**Nota General:** Los llamados a la API mediante los servicios se manejan con archivos locales para evitar tener que cargar información al servidor del Back cada vez que se reinicia la aplicación.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uniandes-isis2603/202210_S2_E3_Discomovil_Front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Uniandes-isis2603/202210_S2_E3_Discomovil_Front/issues"
+  },
+  "homepage": "https://github.com/Uniandes-isis2603/202210_S2_E3_Discomovil_Front#readme"
 }

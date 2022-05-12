@@ -11,7 +11,7 @@ import { Comnentario_listComponent } from './comnentario_list/comnentario_list.c
     CommonModule,
     BrowserModule
   ],
-  declarations: [CardComentarioComponent],
+  declarations: [CardComentarioComponent, Comnentario_listComponent],
   exports: [CardComentarioComponent,Comnentario_listComponent]
 
 })

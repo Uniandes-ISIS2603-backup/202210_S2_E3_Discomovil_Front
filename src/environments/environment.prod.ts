@@ -4,5 +4,7 @@ export const environment = {
   gruposUrl:"../assets/grupoMusical",
   musicosUrl: "../assets/musico",
   clientesUrl: "../assets/cliente",
-  baseURLBack: "http://localhost:8080/api/"
+  baseURLBack: "http://localhost:8080/api/",
+  paqueteUrl:"../assets/paquetes.json",
+  comentarioUrl: "./assets/comentarios.json",
 };
