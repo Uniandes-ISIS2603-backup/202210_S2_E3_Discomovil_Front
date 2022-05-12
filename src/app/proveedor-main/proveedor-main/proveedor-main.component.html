@@ -111,12 +111,9 @@
         <img src="../../../assets/images/zones/map.png" alt="map">
       </div>
       <div class="zones flex flex-col justify-center align-center">
-          <p>Bogota D.C</p>
-          <p>Cartagena</p>
-          <p>Cali</p>
-          <p>Medellín</p>
-          <p>Barranquilla</p>
-        <!-- <div *ngFor="z in proveedor.zonas"></div> -->
+        <div *ngFor="let z of proveedor.zonas">
+          <p>{{z.nombre}}</p>
+        </div>
       </div>
     </div>
   </div>
