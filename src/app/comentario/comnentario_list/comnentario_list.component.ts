@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Comentario } from '../comentario';
+import { ComentarioDetail } from '../Comentario-Detail';
 import { ComentarioService } from '../comentario.service';
 
 @Component({
@@ -9,7 +10,10 @@ import { ComentarioService } from '../comentario.service';
 })
 export class Comnentario_listComponent implements OnInit {
 
-  comentarios: Array<Comentario>=[];
+  selected: Boolean = false;
+  selectedComentario!: ComentarioDetail;
+
+  comentarios: Array<ComentarioDetail>=[];
 
   constructor(private comentarioService: ComentarioService) { }
 
@@ -18,6 +22,11 @@ export class Comnentario_listComponent implements OnInit {
     this.comentarioService.getComentarios().subscribe((comentarios) => {
       this.comentarios = comentarios;
     });
+  }
+
+  onSelected(comentario: ComentarioDetail): void {
+    this.selected = true;
+    this.selectedComentario = comentario;
   }
 
 
