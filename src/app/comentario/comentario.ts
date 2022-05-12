@@ -1,3 +1,4 @@
+
 import { Cliente } from "../cliente/cliente";
 import { Proveedor } from "../proveedor/proveedor";
 
@@ -19,5 +20,6 @@ export class Comentario {
     this.valoracion = valoracion;
     this.proveedor = proveedor;
   }
+
 
 }
