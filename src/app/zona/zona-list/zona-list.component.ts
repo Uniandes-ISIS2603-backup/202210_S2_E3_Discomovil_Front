@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Zona } from '../zona';
 import { ZonaService } from '../zona.service';
+import { ZonaDetail} from '../zona-detail';
 
 @Component({
   selector: 'app-zona-list',
@@ -9,6 +10,14 @@ import { ZonaService } from '../zona.service';
 })
 export class ZonaListComponent implements OnInit {
   zonas: Array<Zona> = [];
+
+  selected: boolean = false;
+  selectedZona!: ZonaDetail;
+
+  onSelected(zona: ZonaDetail): void {
+    this.selectedZona = zona;
+    this.selected = true;
+  }
 
   constructor(private ZonaService: ZonaService) { }
 
