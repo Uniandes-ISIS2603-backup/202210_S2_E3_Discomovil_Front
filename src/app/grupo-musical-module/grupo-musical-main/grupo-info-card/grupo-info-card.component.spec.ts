@@ -4,6 +4,8 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { GrupoInfoCardComponent } from './grupo-info-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('GrupoInfoCardComponent', () => {
   let component: GrupoInfoCardComponent;
@@ -11,6 +13,7 @@ describe('GrupoInfoCardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports : [HttpClientModule, RouterTestingModule],
       declarations: [ GrupoInfoCardComponent ]
     })
     .compileComponents();
@@ -22,7 +25,7 @@ describe('GrupoInfoCardComponent', () => {
     fixture.detectChanges();
   });
 
-  // it('should create', () => {
-  //   expect(component).toBeTruthy();
-  // });
+   it('should create', () => {
+     expect(component).toBeTruthy();
+   });
 });
