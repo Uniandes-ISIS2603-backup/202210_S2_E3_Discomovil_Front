@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Paquete } from '../paquete';
+import { PaqueteDetail } from '../Paquete-Detail';
 import { PaqueteService } from '../paquete.service';
 
 @Component({
@@ -9,7 +10,10 @@ import { PaqueteService } from '../paquete.service';
 })
 export class PaqueteListComponent implements OnInit {
 
-  paquetes: Array<Paquete> =[];
+  selected: Boolean = false;
+  selectedPaquete!: PaqueteDetail;
+
+  paquetes: Array<PaqueteDetail> =[];
 
   constructor(private paqueteService:PaqueteService) { }
 
@@ -17,6 +21,11 @@ export class PaqueteListComponent implements OnInit {
     this.paqueteService.getPaquetes().subscribe((paquetes) => {
       this.paquetes = paquetes;
     });
+  }
+
+  onSelected(paquete: PaqueteDetail): void {
+    this.selected = true;
+    this.selectedPaquete = paquete;
   }
 
   ngOnInit() {

@@ -8,8 +8,12 @@
     </tr>
   </thead>
   <tbody>
-
+    <div *ngIf="selected">
+      <app-comentario-detail [comentarioDetail]="selectedComentario"></app-comentario-detail>
+    </div>
     <tr *ngFor="let comentario of comentarios">
+      <button  type="button" class="btn btn-danger" (click)="onSelected(comentario)">Mas Detalle</button>
+      </tr>
     <td>{{paquete.nombre}</td>
   </tbody>
 </table>

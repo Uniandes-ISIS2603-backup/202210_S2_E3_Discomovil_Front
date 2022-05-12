@@ -5,6 +5,6 @@ export const environment = {
   musicosUrl: "../assets/musico",
   clientesUrl: "../assets/cliente",
   baseURLBack: "http://localhost:8080/api/",
-  paqueteUrl:"../assets/paquetes.json",
-  comentarioUrl: "./assets/comentarios.json",
+  paqueteUrl:"../assets/paquetes",
+  comentarioUrl: "./assets/comentarios",
 };
