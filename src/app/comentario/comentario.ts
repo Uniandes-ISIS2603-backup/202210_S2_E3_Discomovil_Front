@@ -1,22 +1,25 @@
+
+import { Cliente } from "../cliente/cliente";
 import { Proveedor } from "../proveedor/proveedor";
 
 export class Comentario {
-  proveedor: Proveedor;
- // cliente: Cliente;
-  contenido: string;
+
+  id: number;
+  contenido : string;
+  cliente: Cliente;
   fecha: string;
-  valoracion: number;
-  constructor(
-    proveedor: Proveedor,
-  //  cliente: Cliente,
-    contenido: string,
-    fecha: string,
-    valoracion: number
-  ) {
-    this.proveedor = proveedor;
-   // this.cliente = cliente;
+  valoracion : number;
+  proveedor: Proveedor;
+
+  constructor (id: number, contenido: string, cliente: Cliente, fecha: string, valoracion: number, proveedor: Proveedor)
+  {
+    this.id = id;
     this.contenido = contenido;
+    this.cliente = cliente;
     this.fecha = fecha;
     this.valoracion = valoracion;
+    this.proveedor = proveedor;
   }
+
+
 }

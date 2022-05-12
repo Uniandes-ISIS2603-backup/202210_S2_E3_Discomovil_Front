@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          <img src="{{proveedor.imagen}}" alt="" class="img-fluid prov-img">
+        </div>
+        <div class="col">
+          <h1 class="nombre">{{proveedor.nombre}}</h1>
+          <h2>Grupos Musicales:</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="table-responsive">
+       <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Grupo Musical</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let grupo of proveedor.gruposMusicales">
+            <td scope="row"><a class="figure-caption" [routerLink] ="['', { outlets: { 'card-grupo': [grupo.id] } }]" >{{grupo.nombre}}</a></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>

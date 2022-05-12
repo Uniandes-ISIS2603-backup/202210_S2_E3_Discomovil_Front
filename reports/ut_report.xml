@@ -1,7 +1,33 @@
 <testExecutions version="1">
-  <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'museums-front'" duration="118"/>
-    <testCase name="AppComponent should create the app" duration="14"/>
-    <testCase name="AppComponent should render title" duration="13"/>
+  <file path="src/app/proveedor/proveedor-list/proveedor-list.component.spec.ts">
+    <testCase name="ProveedorListComponent should have an img element " duration="30"/>
+    <testCase name="ProveedorListComponent should create" duration="5"/>
+  </file>
+  <file path="src/app/proveedor-main/proveedor-main/proveedor-main.component.spec.ts">
+    <testCase name="ProveedorMainComponent should create" duration="11"/>
+  </file>
+  <file path="src/app/proveedor/proveedor-detail/proveedor-detail.component.spec.ts">
+    <testCase name="ProveedorDetailComponent should have an img element" duration="7"/>
+    <testCase name="ProveedorDetailComponent should create" duration="4"/>
+  </file>
+  <file path="src/app/proveedor-main/proveedor-main/proveedor-main.component.spec.ts">
+    <testCase name="ProveedorMainComponent should create" duration="15"/>
+  </file>
+  <file path="src/app/proveedor/proveedor.service.spec.ts">
+    <testCase name="Service: Proveedor should ..." duration="1"/>
+  </file>
+  <file path="src/app/grupo-musical-module/grupoMusical-list/grupoMusical-list.component.spec.ts">
+    <testCase name="GrupoMusicalListComponent should create" duration="5"/>
+  </file>
+  <file path="src/app/comentario/card-comentario/card-comentario.component.spec.ts">
+    <testCase name="CardComentarioComponent should create" duration="7"/>
+    <testCase name="CardComentarioComponent should display the contenido" duration="3"/>
+  </file>
+  <file path="src/app/cliente/cliente-service.service.spec.ts">
+    <testCase name="Service: ClienteService should get client with id 1" duration="1"/>
+    <testCase name="Service: ClienteService should ..." duration="1"/>
+  </file>
+  <file path="src/app/red-social/red-social-list/red-social-list.component.spec.ts">
+    <testCase name="RedSocialListComponent should create" duration="3"/>
   </file>
 </testExecutions>

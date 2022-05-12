@@ -1,0 +1,26 @@
+{
+  "id": 1,
+  "nombre": "Gabriel Alvarez",
+  "fechaDeNacimiento": "1978-05-09",
+  "email": "g.alvarez@gmail.com",
+  "comentarios": [
+      {
+          "id": 1,
+          "contenido": "Muy buen servicio, recomendado",
+          "fecha": "2020-08-13",
+          "valoracion": 4,
+          "cliente": {
+              "id": 1,
+              "nombre": "Gabriel Alvarez",
+              "fechaDeNacimiento": "1978-05-09",
+              "email": "g.alvarez@gmail.com"
+          },
+          "proveedor": {
+            "id": 1,
+            "nombre": "Snap Megafiestas",
+            "descripcion": "Somos líderes en la producción de los mejores eventos de colegios, empresas, fiestas de 15 años, entre otros, han hecho parte de nuestro crecimiento permanente, consolidándonos como los mejores.",
+            "trayectoria": "30 años de Experiencia"
+           }
+      }
+  ]
+}
