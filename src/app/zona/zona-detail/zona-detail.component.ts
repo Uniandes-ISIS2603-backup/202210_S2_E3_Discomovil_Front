@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Zona } from '../zona';
+import { ZonaDetail } from '../zona-detail';
 
 @Component({
   selector: 'app-zona-detail',
@@ -8,7 +9,7 @@ import { Zona } from '../zona';
 })
 export class ZonaDetailComponent implements OnInit {
 
-  @Input()  zonaDetail! : Zona;
+  @Input()  zonaDetail! : ZonaDetail;
 
   constructor() { }
 
