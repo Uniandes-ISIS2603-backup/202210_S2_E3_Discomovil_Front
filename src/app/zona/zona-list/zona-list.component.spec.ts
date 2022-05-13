@@ -33,6 +33,8 @@ describe('ZonaListComponent', () => {
       faker.lorem.sentence(),  //calificacion
       faker.image.imageUrl(), //imagen
       [],
+      [],
+      [],
       []
     );
 

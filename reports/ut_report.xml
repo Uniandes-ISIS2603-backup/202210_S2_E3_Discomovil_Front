@@ -1,61 +1,61 @@
 <testExecutions version="1">
-  <file path="src/app/grupo-musical-module/grupo-musical-main/grupo-info-card/grupo-info-card.component.spec.ts">
-    <testCase name="GrupoInfoCardComponent should create" duration="39"/>
-  </file>
-  <file path="src/app/comentario/comentario.service.spec.ts">
-    <testCase name="Service: Comentario should ..." duration="2"/>
-  </file>
-  <file path="src/app/comentario/card-comentario/card-comentario.component.spec.ts">
-    <testCase name="CardComentarioComponent should create" duration="7"/>
-    <testCase name="CardComentarioComponent should display the contenido" duration="4"/>
-  </file>
   <file path="src/app/comentario/comnentario_list/comnentario_list.component.spec.ts">
-    <testCase name="Comnentario_listComponent should create" duration="8"/>
+    <testCase name="Comnentario_listComponent should create" duration="123"/>
   </file>
   <file path="src/app/comentario/comentario-detail/comentario-detail.component.spec.ts">
-    <testCase name="ComentarioDetailComponent should create" duration="7"/>
+    <testCase name="ComentarioDetailComponent should create" duration="33"/>
+  </file>
+  <file path="src/app/comentario/comentario.service.spec.ts">
+    <testCase name="Service: Comentario should ..." duration="11"/>
   </file>
   <file path="src/app/cliente/cliente-service.service.spec.ts">
-    <testCase name="Service: ClienteService should get client with id 1" duration="2"/>
-    <testCase name="Service: ClienteService should ..." duration="1"/>
+    <testCase name="Service: ClienteService should get client with id 1" duration="26"/>
+    <testCase name="Service: ClienteService should ..." duration="7"/>
   </file>
-  <file path="src/app/red-social/red-social-list/red-social-list.component.spec.ts">
-    <testCase name="RedSocialListComponent should create" duration="4"/>
+  <file path="src/app/grupo-musical-module/grupo-musical-main/grupo-info-card/grupo-info-card.component.spec.ts">
+    <testCase name="GrupoInfoCardComponent should create" duration="66"/>
   </file>
-  <file path="src/app/grupo-musical-module/grupoMusical-list/grupoMusical-list.component.spec.ts">
-    <testCase name="GrupoMusicalListComponent should create" duration="7"/>
-  </file>
-  <file path="src/app/proveedor/proveedor-list/proveedor-list.component.spec.ts">
-    <testCase name="ProveedorListComponent should have an img element " duration="8"/>
-    <testCase name="ProveedorListComponent should create" duration="4"/>
-  </file>
-  <file path="src/app/proveedor/proveedor-detail/proveedor-detail.component.spec.ts">
-    <testCase name="ProveedorDetailComponent should create" duration="5"/>
-    <testCase name="ProveedorDetailComponent should have an img element" duration="3"/>
-  </file>
-  <file path="src/app/proveedor-main/proveedor-main/proveedor-main.component.spec.ts">
-    <testCase name="ProveedorMainComponent should create" duration="14"/>
+  <file path="src/app/comentario/card-comentario/card-comentario.component.spec.ts">
+    <testCase name="CardComentarioComponent should create" duration="43"/>
+    <testCase name="CardComentarioComponent should display the contenido" duration="16"/>
   </file>
   <file path="src/app/grupo-musical-module/grupo-musical-main/grupo-musical-main.component.spec.ts">
-    <testCase name="GrupoMusicalMainComponent should create" duration="7"/>
-  </file>
-  <file path="src/app/proveedor-main/proveedor-main/proveedor-main.component.spec.ts">
-    <testCase name="ProveedorMainComponent should create" duration="7"/>
-  </file>
-  <file path="src/app/paquete/paquete.service.spec.ts">
-    <testCase name="Service: Paquete should ..." duration="1"/>
-  </file>
-  <file path="src/app/paquete/paquete-list/paquete-list.component.spec.ts">
-    <testCase name="PaqueteListComponent should create" duration="5"/>
+    <testCase name="GrupoMusicalMainComponent should create" duration="45"/>
   </file>
   <file path="src/app/paquete/paquete-detail/paquete-detail.component.spec.ts">
-    <testCase name="PaqueteDetailComponent should create" duration="5"/>
+    <testCase name="PaqueteDetailComponent should create" duration="21"/>
   </file>
-  <file path="src/app/musico/musico-service.service.spec.ts">
-    <testCase name="Service: MusicoService should get all musicos" duration="1"/>
-    <testCase name="Service: MusicoService should ..." duration="1"/>
+  <file path="src/app/proveedor-main/proveedor-main/proveedor-main.component.spec.ts">
+    <testCase name="ProveedorMainComponent should create" duration="118"/>
+  </file>
+  <file path="src/app/paquete/paquete-list/paquete-list.component.spec.ts">
+    <testCase name="PaqueteListComponent should create" duration="33"/>
   </file>
   <file path="src/app/proveedor/proveedor.service.spec.ts">
-    <testCase name="Service: Proveedor should ..." duration="1"/>
+    <testCase name="Service: Proveedor should ..." duration="12"/>
+  </file>
+  <file path="src/app/red-social/red-social-list/red-social-list.component.spec.ts">
+    <testCase name="RedSocialListComponent should create" duration="20"/>
+  </file>
+  <file path="src/app/paquete/paquete.service.spec.ts">
+    <testCase name="Service: Paquete should ..." duration="6"/>
+  </file>
+  <file path="src/app/musico/musico-service.service.spec.ts">
+    <testCase name="Service: MusicoService should get all musicos" duration="6"/>
+    <testCase name="Service: MusicoService should ..." duration="3"/>
+  </file>
+  <file path="src/app/proveedor/proveedor-detail/proveedor-detail.component.spec.ts">
+    <testCase name="ProveedorDetailComponent should create" duration="16"/>
+    <testCase name="ProveedorDetailComponent should have an img element" duration="17"/>
+  </file>
+  <file path="src/app/proveedor/proveedor-list/proveedor-list.component.spec.ts">
+    <testCase name="ProveedorListComponent should create" duration="29"/>
+    <testCase name="ProveedorListComponent should have an img element " duration="16"/>
+  </file>
+  <file path="src/app/grupo-musical-module/grupoMusical-list/grupoMusical-list.component.spec.ts">
+    <testCase name="GrupoMusicalListComponent should create" duration="23"/>
+  </file>
+  <file path="src/app/proveedor-main/proveedor-main/proveedor-main.component.spec.ts">
+    <testCase name="ProveedorMainComponent should create" duration="30"/>
   </file>
 </testExecutions>
