@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  paqueteUrl:"../assets/paquetes.json",
-  comentarioUrl: "./assets/comentarios.json",
+  paqueteUrl:"../assets/paquetes",
+  comentarioUrl: "./assets/comentarios",
   baseUrl:"../assets/proveedores",
   gruposUrl:"../assets/grupoMusical",
   musicosUrl: "../assets/musico",
