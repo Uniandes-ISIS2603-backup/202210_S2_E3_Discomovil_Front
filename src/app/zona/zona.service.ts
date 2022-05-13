@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment.prod';
 import { Observable } from 'rxjs';
-import { Zona } from './zona';
+import { ZonaDetail } from './zona-detail';
 
 
 @Injectable({
@@ -13,8 +13,8 @@ export class ZonaService {
 
 constructor(private http: HttpClient) { }
 
-  getZonas(): Observable<Zona[]> {
-    return this.http.get<Zona[]>(this.apiURL);
+  getZonas(): Observable<ZonaDetail[]> {
+    return this.http.get<ZonaDetail[]>(this.apiURL);
 
 
   }

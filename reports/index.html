@@ -2021,7 +2021,7 @@ Licensed under the MIT license.
                             ctx.lineTo(xrange.to + subPixel, yrange.to);
                         } else {
                             ctx.moveTo(xrange.from, yrange.to + subPixel);
-                            ctx.lineTo(xrange.to, yrange.to + subPixel);                            
+                            ctx.lineTo(xrange.to, yrange.to + subPixel);
                         }
                         ctx.stroke();
                     } else {
@@ -2536,9 +2536,9 @@ Licensed under the MIT license.
                 radius = series.points.radius,
                 symbol = series.points.symbol;
 
-            // If the user sets the line width to 0, we change it to a very 
+            // If the user sets the line width to 0, we change it to a very
             // small value. A line width of 0 seems to force the default of 1.
-            // Doing the conditional here allows the shadow setting to still be 
+            // Doing the conditional here allows the shadow setting to still be
             // optional even with a lineWidth of 0.
 
             if( lw == 0 )
@@ -4038,7 +4038,7 @@ can just fix the size of their placeholders.
             plot.setupGrid();
             plot.draw();
         }
-        
+
         function bindEvents(plot, eventHolder) {
             plot.getPlaceholder().resize(onResize);
         }
@@ -4046,11 +4046,11 @@ can just fix the size of their placeholders.
         function shutdown(plot, eventHolder) {
             plot.getPlaceholder().unbind("resize", onResize);
         }
-        
+
         plot.hooks.bindEvents.push(bindEvents);
         plot.hooks.shutdown.push(shutdown);
     }
-    
+
     $.plot.plugins.push({
         init: init,
         options: options,

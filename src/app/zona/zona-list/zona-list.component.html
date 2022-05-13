@@ -1,3 +1,7 @@
+<div *ngIf= "selected">
+  <app-zona-detail> [zonaDetail]="selectedBook" </app-zona-detail>
+</div>
+
 <div class="container-fluid">
   <div  *ngFor="let z of zonas">
     <div class="row">
