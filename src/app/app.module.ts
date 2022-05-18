@@ -16,6 +16,11 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { GrupoMusicalModuleModule } from './grupo-musical-module/grupo-musical-module.module';
 
+import { PaqueteModule } from './paquete/paquete.module';
+import { ComentarioModule } from './comentario/comentario.module';
+import { ClienteModule } from './cliente/cliente.module';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,8 +37,14 @@ import { GrupoMusicalModuleModule } from './grupo-musical-module/grupo-musical-m
     FooterModule,
     ProveedorModule,
     ProveedorMainModule,
+
+    PaqueteModule,
+    ComentarioModule,
+
     ProveedorFiltroGeneroModule,
-    ZonaModule
+    ZonaModule,
+    ClienteModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -4,37 +4,53 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { ZonaListComponent } from './zona-list.component';
-import { ZonaDetailComponent } from '../zona-detail/zona-detail.component';
 import { faker } from '@faker-js/faker';
-import { ZonaDetail } from '../zona-detail';
 import { Proveedor } from 'src/app/proveedor/proveedor';
+import {Zona} from '../zona';
+import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientModule } from '@angular/common/http';
+import {ZonaService} from '../zona.service';
+
 
 describe('ZonaListComponent', () => {
-  let component: ZonaDetailComponent;
-  let fixture: ComponentFixture<ZonaDetailComponent>;
+  let component: ZonaListComponent;
+  let fixture: ComponentFixture<ZonaListComponent>;
   let debug: DebugElement;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ZonaDetailComponent]
+      imports: [HttpClientModule, RouterTestingModule],
+      declarations: [ ZonaListComponent]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ZonaDetailComponent);
+    fixture = TestBed.createComponent(ZonaListComponent);
     component = fixture.componentInstance;
 
     let proveedor = new Proveedor(
-      faker.random.number(),  //id
-      faker.name.firstName(), //nombre
+      faker.datatype.number(),
+      faker.lorem.sentence(), //nombre
       faker.lorem.sentence(), //descripcion
       faker.lorem.sentence(),  //trayectorio
       faker.lorem.sentence(),  //calificacion
       faker.image.imageUrl(), //imagen
       [],
+      [],
+      [],
       []
     );
+
+    // component.zonas = [
+    //   new ZonaDetail(
+    //     faker.datatype.number(),
+    //     faker.datatype.number(),
+    //     faker.lorem.sentence(),
+    //     proveedor
+    //   ),
+    // ];
+
 
     fixture.detectChanges();
     debug = fixture.debugElement;

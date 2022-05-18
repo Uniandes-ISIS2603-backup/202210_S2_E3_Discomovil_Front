@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Zona } from '../zona';
 import { ZonaDetail } from '../zona-detail';
+import { ZonaService } from '../zona.service';
 
 @Component({
   selector: 'app-zona-detail',
@@ -9,11 +10,21 @@ import { ZonaDetail } from '../zona-detail';
 })
 export class ZonaDetailComponent implements OnInit {
 
+  zonas: Array<ZonaDetail> =[];
+
   @Input()  zonaDetail! : ZonaDetail;
 
-  constructor() { }
+  constructor(private zonaService: ZonaService) { }
+
+  getZonas(): void {
+    this.zonaService.getZonas().subscribe((zonas) => {
+      this.zonas = zonas;
+    }
+    );
+  }
 
   ngOnInit() {
+    this.getZonas();
   }
 
 }

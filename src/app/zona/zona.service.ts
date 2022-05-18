@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment.prod';
 import { Observable } from 'rxjs';
 import { ZonaDetail } from './zona-detail';
 
@@ -9,7 +9,7 @@ import { ZonaDetail } from './zona-detail';
   providedIn: 'root'
 })
 export class ZonaService {
-  private apiURL: string = environment.baseURL + 'zonas';
+  private apiURL: string = environment.baseURLBack + 'zonas';
 
 constructor(private http: HttpClient) { }
 

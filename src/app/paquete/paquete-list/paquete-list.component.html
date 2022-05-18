@@ -1,0 +1,22 @@
+<div class="container-fluid ">
+  <div class="row">
+  <div class="col-xs-12 col-sm-10  d-flex justify-content-left text-left">
+<table class="table">
+  <thead class="thread-white">
+    <tr>
+      <th>Nombre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <div *ngIf="selected">
+      <app-paquete-detail [paqueteDetail]="selectedPaquete"></app-paquete-detail>
+</div>
+<tr *ngFor="let paquete of paquetes">
+<button  type="button" class="btn btn-danger" (click)="onSelected(paquete)">Mas Detalle</button>
+</tr>
+    <td>{{paquete.nombre}</td>
+  </tbody>
+</table>
+</div>
+</div>
+</div>

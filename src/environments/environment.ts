@@ -4,10 +4,13 @@
 
 export const environment = {
   production: false,
+  paqueteUrl:"../assets/paquetes",
+  comentarioUrl: "./assets/comentarios",
   baseUrl:"../assets/proveedores",
   gruposUrl:"../assets/grupoMusical",
   musicosUrl: "../assets/musico",
-  baseURL: "http://localhost:8080/api/"
+  baseURL: "http://localhost:8080/api/",
+  eventoUrl: "../assets/evento"
 };
 
 /*

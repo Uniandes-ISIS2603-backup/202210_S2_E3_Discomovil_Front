@@ -26,6 +26,12 @@ export class ProveedorFiltroGeneroComponent implements OnInit {
     this.genero = this.route.snapshot.paramMap.get('genero')!;
   }
 
+  handleClick(e: Event) {
+    let newGenero = document.getElementById("genero-input");
+    alert(newGenero);
+    e.preventDefault();
+  }
+
   getProveedores() {
     this.proveedorFiltroGeneroService
       .getProveedores()

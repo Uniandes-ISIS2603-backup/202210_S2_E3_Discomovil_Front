@@ -10,7 +10,7 @@ describe('Service: ProveedorMain', () => {
     });
   });
 
-  it('should ...', inject([ProveedorMainService], (service: ProveedorMainService) => {
-    expect(service).toBeTruthy();
-  }));
+  // it('should ...', inject([ProveedorMainService], (service: ProveedorMainService) => {
+  //   expect(service).toBeTruthy();
+  // }));
 });
