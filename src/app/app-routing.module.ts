@@ -11,6 +11,7 @@ import { GrupoInfoCardComponent } from './grupo-musical-module/grupo-musical-mai
 import { MusicoComponent } from './musico/musico.component';
 import { ClienteComponent } from './cliente/cliente.component';
 import { GrupoMusicalListComponent } from './grupo-musical-module/grupoMusical-list/grupoMusical-list.component';
+import { ProveedorFiltroCalificacionComponent } from './proveedor/proveedor-filtro-calificacion/proveedor-filtro-calificacion.component';
 
 const routes: Routes = [
   { path: 'clientes/:id', component: ClienteComponent },
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'proveedores/filtros/genero/:genero',
     component: ProveedorFiltroGeneroComponent,
+  },
+  {
+    path: 'proveedores/filtros/calificacion/:rating',
+    component: ProveedorFiltroCalificacionComponent
   },
   //Este PAGE NOT FOUND debe ir al FINAL
   { path: '', component: HomePageComponent },
