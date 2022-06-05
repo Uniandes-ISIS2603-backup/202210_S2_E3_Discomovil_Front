@@ -19,7 +19,9 @@
         <dd>{{ proveedorDetail.trayectoria }}</dd>
         <hr />
         <dt class="bold">calificacion</dt>
-        <dd class="caption">{{ proveedorDetail.calificacion }}</dd>
+        <dd class="caption">
+          <span *ngFor="let item of [].constructor(proveedorDetail.calificacion); let i = index">⭐</span>
+        </dd>
         <hr />
         <a href="/proveedores/{{proveedorDetail.id}}"><button type="button" class="btn btn-danger">Mas Detalle</button></a>
       </dl>
