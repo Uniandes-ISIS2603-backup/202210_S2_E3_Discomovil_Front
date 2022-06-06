@@ -12,6 +12,7 @@ import { MusicoComponent } from './musico/musico.component';
 import { ClienteComponent } from './cliente/cliente.component';
 import { GrupoMusicalListComponent } from './grupo-musical-module/grupoMusical-list/grupoMusical-list.component';
 import { ProveedorFiltroCalificacionComponent } from './proveedor/proveedor-filtro-calificacion/proveedor-filtro-calificacion.component';
+import { ProveedorFiltroZonaComponent } from './proveedor/proveedor-filtro-zona/proveedor-filtro-zona.component';
 
 const routes: Routes = [
   { path: 'clientes/:id', component: ClienteComponent },
@@ -25,6 +26,9 @@ const routes: Routes = [
     path: 'proveedores/filtros/genero/:genero',
     component: ProveedorFiltroGeneroComponent,
   },
+  {path:'provedores/filtros/zonas/:zona',
+  component:ProveedorFiltroZonaComponent},
+
   {
     path: 'proveedores/filtros/calificacion/:rating',
     component: ProveedorFiltroCalificacionComponent

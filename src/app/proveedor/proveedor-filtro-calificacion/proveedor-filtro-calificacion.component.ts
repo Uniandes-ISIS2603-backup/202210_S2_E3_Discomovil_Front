@@ -39,6 +39,7 @@ export class ProveedorFiltroCalificacionComponent implements OnInit {
     })
   }
 
+
   updateRating() {
     let rtng : string = this.aRoute.snapshot.paramMap.get('rating')!;
     this.getProveedoresByRating(parseInt(rtng));

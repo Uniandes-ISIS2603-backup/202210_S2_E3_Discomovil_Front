@@ -10,7 +10,7 @@ import { ZonaService } from '../zona.service';
 })
 export class ZonaDetailComponent implements OnInit {
 
-  zonas: Array<ZonaDetail> =[];
+  zonas: Array<Zona> =[];
 
   @Input()  zonaDetail! : ZonaDetail;
 

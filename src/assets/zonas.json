@@ -1,0 +1,28 @@
+[
+  {
+    "latitud": "5.5",
+    "longitud": "5.5",
+    "nombre": "Barranquilla"
+  },
+  {
+    "latitud": "1.1",
+    "longitud": "1.1",
+    "nombre": "Bogota D.C"
+  },
+  {
+    "latitud": "2.2",
+    "longitud": "2.2",
+    "nombre": "Cali"
+  },
+  {
+
+    "latitud": "3.3",
+    "longitud": "3.3",
+    "nombre": "Cartagena"
+  },
+  {
+    "latitud": "4.4",
+    "longitud": "4.4",
+    "nombre": "Medellin"
+  }
+]

@@ -9,6 +9,7 @@ import { ProveedorFiltroCalificacionComponent } from './proveedor-filtro-calific
 import { RouterModule } from '@angular/router';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RatingStarsComponent } from './proveedor-filtro-calificacion/rating-stars/rating-stars.component';
+import { ProveedorFiltroZonaComponent } from './proveedor-filtro-zona/proveedor-filtro-zona.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { RatingStarsComponent } from './proveedor-filtro-calificacion/rating-sta
     ProveedorListComponent,
     ProveedorDetailComponent,
     ProveedorFiltroCalificacionComponent,
-    RatingStarsComponent
+    RatingStarsComponent,
+    ProveedorFiltroZonaComponent
   ],
   exports:[ProveedorListComponent]
 })

@@ -7,4 +7,5 @@ export const environment = {
   baseURLBack: "http://localhost:8080/api/",
   paqueteUrl:"../assets/paquetes",
   comentarioUrl: "./assets/comentarios",
+  zonasUrl: "../assets/zonas",
 };
